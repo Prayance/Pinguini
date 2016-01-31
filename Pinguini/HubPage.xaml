@@ -60,9 +60,13 @@
     </Page.Resources>
 
     <Grid x:Name="LayoutRoot">
-        <Hub x:Name="Hub" x:Uid="Hub" Header="application name" Background="{ThemeResource HubBackgroundImageBrush}">
-            <HubSection x:Uid="HubSection1" Header="SECTION 1" DataContext="{Binding Groups}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
-                <DataTemplate>
+        <Hub x:Name="Hub" x:Uid="Hub" Header="Pinguini" 
+             Background="{ThemeResource HubBackgroundImageBrush}">
+            <HubSection x:Uid="HubSection1" 
+                        Header="General Information" 
+                        DataContext="{Binding Groups}" 
+                        HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
+                <DataTemplate>           
                     <ListView
                         ItemsSource="{Binding}"
                         IsItemClickEnabled="True"
